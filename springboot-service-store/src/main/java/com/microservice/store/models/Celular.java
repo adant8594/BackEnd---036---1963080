@@ -4,20 +4,28 @@ import java.util.Date;
 
 public class Celular {
 	
-	private Long id;
+	private Long Id;
 	
 	private String name;
 	
 	private String marca;
 	
 	private Date createdAt;
+	
+	private Integer port;
+	
+	public Celular(Long id, String name, String marca) {
+		this.Id = id;
+		this.name = name;
+		this.marca = marca;
+	}
 
 	public Long getId() {
-		return id;
+		return Id;
 	}
 
 	public void setId(Long id) {
-		this.id = id;
+		Id = id;
 	}
 
 	public String getName() {
@@ -43,4 +51,13 @@ public class Celular {
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
 	}
+
+	public Integer getPort() {
+		return port;
+	}
+
+	public void setPort(Integer port) {
+		this.port = port;
+	}
+	
 }

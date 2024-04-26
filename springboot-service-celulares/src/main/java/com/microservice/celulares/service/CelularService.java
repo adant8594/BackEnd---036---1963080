@@ -5,7 +5,7 @@ import java.util.List;
 import com.microservice.celulares.entity.Celular;
 
 public interface CelularService {
-
+	
 	public List<Celular> findAll();
 	
 	public Celular findById(Long id);

@@ -9,7 +9,7 @@ public class Store {
 	public Store() {
 		
 	}
-
+	
 	public Store(Celular cel, Integer cantidad) {
 		super();
 		this.cel = cel;

@@ -17,9 +17,12 @@ import javax.persistence.Transient;
 @Entity
 @Table(name = "celulares")
 public class Celular implements Serializable{
-	
-	private static final long serialVersionUID = 8550556477721078417L;
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8550556477721078417L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -28,13 +31,13 @@ public class Celular implements Serializable{
 	
 	private String marca;
 	
-	@Column(name = "create_at")
+	@Column(name = "created_at")
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date createAt;
-
+	private Date createdAt;
+	
 	@Transient
 	private Integer port;
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -42,7 +45,7 @@ public class Celular implements Serializable{
 	public void setId(Long id) {
 		this.id = id;
 	}
-
+	
 	public String getName() {
 		return name;
 	}
@@ -59,12 +62,12 @@ public class Celular implements Serializable{
 		this.marca = marca;
 	}
 
-	public Date getCreateAt() {
-		return createAt;
+	public Date getCreatedAt() {
+		return createdAt;
 	}
 
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
 	}
 
 	public Integer getPort() {
@@ -74,4 +77,5 @@ public class Celular implements Serializable{
 	public void setPort(Integer port) {
 		this.port = port;
 	}
+	
 }
