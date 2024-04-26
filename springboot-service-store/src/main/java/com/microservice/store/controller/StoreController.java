@@ -32,7 +32,7 @@ public class StoreController {
 	
 	public Store metodoGenerico(Long id, Integer cantidad) {
 		Store store = new Store();
-		Celular cel = new Celular(id, "Celular de Adán.", "Xiaomi");
+		Celular cel = new Celular(id, "El celular de Adán", "Xiaomi");
 		
 		store.setCantidad(cantidad);
 		store.setCel(cel);

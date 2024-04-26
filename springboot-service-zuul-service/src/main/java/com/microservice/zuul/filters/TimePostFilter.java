@@ -26,7 +26,7 @@ public class TimePostFilter extends ZuulFilter {
 		RequestContext ctx = RequestContext.getCurrentContext();
 		HttpServletRequest request = ctx.getRequest();
 		
-		log.info("Entrando a filtro post: ");
+		log.info("Entrando a filtro post:");
 		
 		Long tiempoInicio = (Long)request.getAttribute("tiempoInicio");
 		Long tiempoFinal = System.currentTimeMillis();
