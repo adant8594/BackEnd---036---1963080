@@ -13,7 +13,7 @@ public class CelularServiceImpl implements CelularService {
 
 	@Autowired
 	private CelularDao celularDao;
-	
+
 	@Override
 	public List<Celular> findAll() {
 		return (List<Celular>) celularDao.findAll();
